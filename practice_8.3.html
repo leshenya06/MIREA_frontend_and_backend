@@ -195,28 +195,29 @@
     var offset = { x: 0, y: 0 };
 
 
-    modal.querySelector('.modal-content').addEventListener('mousedown', function(e) {
-        isDragging = true;
-        offset.x = e.clientX - modal.getBoundingClientRect().left;
-        offset.y = e.clientY - modal.getBoundingClientRect().top;
-    });
-
-    document.addEventListener('mousemove', function(e) {
-        if (isDragging) {
-            modal.style.position = 'absolute';
-            modal.style.left = (e.clientX - offset.x) + 'px';
-            modal.style.top = (e.clientY - offset.y) + 'px';
-        }
-    });
-
-    document.addEventListener('mouseup', function() {
-        isDragging = false;
-    });
+    // modal.querySelector('.modal-content').addEventListener('mousedown', function(e) {
+    //     isDragging = true;
+    //     offset.x = e.clientX - modal.getBoundingClientRect().left;
+    //     offset.y = e.clientY - modal.getBoundingClientRect().top;
+    // });
+    //
+    // document.addEventListener('mousemove', function(e) {
+    //     if (isDragging) {
+    //         modal.style.position = 'absolute';
+    //         modal.style.left = (e.clientX - offset.x) + 'px';
+    //         modal.style.top = (e.clientY - offset.y) + 'px';
+    //     }
+    // });
+    //
+    // document.addEventListener('mouseup', function() {
+    //     isDragging = false;
+    // });
 
     Array.from(btns)
         .forEach((btn) => {
             btn.onclick = function () {
                 modal.style.display = "flex";
+                document.getElementsByTagName("html")[0].style.overflow="hidden";
                 service = this.name;
             }
         })
