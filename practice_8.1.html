@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html style="height: 100%;" lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practice 8</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="src/bee.png" rel="icon">
+    <link rel="stylesheet" type="text/css" href="styles_8.css">
+</head>
+<body style="display: flex; flex-direction: column;">
+<header style="  justify-content: space-between;  ">
+    <div class="logo-wraper" style="max-width: max-content;">
+        <div class="logo"></div>
+        <p>Logo</p>
+    </div>
+    <div class="info" style="max-width: max-content; align-self: end; text-align: right;">
+        <p>Группа ЭФБО-01-23</p>
+        <p>Петрова Ксения Олеговна</p>
+    </div>
+</header>
+<!--<nav>-->
+<!--    <a href="practice_8.1.html">Главная</a>-->
+<!--    <a href="practice_8.2.html">Первый семестр</a>-->
+<!--    <a>Второй семестр</a>-->
+<!--    <a href="practice_8.3.html">Услуги</a>-->
+<!--    <a>Авторизация</a>-->
+<!--</nav>-->
+<nav class="navbar navbar-expand-lg navbar-light bg-light py-0">
+    <div class="container-fluid py-0">
+        <div class="collapse navbar-collapse py-0" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="practice_8.1.html">Главная</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="practice_8.2.html">Первый семестр</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Второй семестр</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="practice_8.3.html">Услуги</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Авторизация</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<main style=" flex:1;">
+    <aside class="left-colummn">
+        <div class="dropdown">
+            <a class="btn btn-secondary dropdown-toggle navbut" href="#" role="button" id="dropdownMenuLink"
+               data-bs-toggle="dropdown" aria-expanded="false">
+                <p>Навигация по странице</p>
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                <li><a href="#front">Фронтенд</a></li>
+                <li><a href="#back">Бэкенд</a></li>
+            </ul>
+        </div>
+    </aside>
+    <div class="right-column">
+        <h2>Добро пожаловать на мой сайт</h2>
+        <div class="person-info" style=" justify-content: space-between; width: 95%;">
+            <p>Меня зовут Петрова Ксения Олеговна и я начинающий
+                специалист по веб-разработке.</p>
+            <img class="photo-img" src="src/user.png" alt="Фото пользователя">
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                        aria-expanded="true" aria-controls="collapseOne">
+                    <h3 id="front">Фронтенд</h3>
+                </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                 data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <p>Фронтенд (или клиентская часть) — это то, что видит пользователь. Он включает в себя все
+                        визуальные
+                        элементы веб-сайта или приложения: кнопки, формы, изображения и текст. Фронтенд разработчики
+                        используют
+                        языки разметки и стилизации, такие как HTML, CSS и JavaScript, чтобы создавать интерактивные и
+                        привлекательные интерфейсы. Основная задача фронтенда — обеспечить удобство использования и
+                        эстетическую
+                        привлекательность.</p>
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe src="https://vk.com/video_ext.php?oid=-15086840&id=456239570&hd=2&autoplay=1"
+                                width="853"
+                                height="480"
+                                allow="autoplay; encrypted-media; fullscreen; picture-in-picture; screen-wake-lock;"
+                                allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+                        aria-expanded="true" aria-controls="collapseOne">
+                    <h3 id="back">Бэкенд</h3>
+                </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse show" aria-labelledby="headingTwo"
+                 data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <p>Бэкенд (или серверная часть) — это «за кулисами» веб-приложения . Он отвечает за обработку
+                        данных,
+                        управление пользователями и взаимодействие с базами данных. Бэкенд разработчики используют языки
+                        программирования, такие как Python, Ruby, Java или PHP, а также фреймворки и базы данных для
+                        создания
+                        логики приложения. Основная задача бэкенда — обеспечить стабильную работу приложения и
+                        безопасность
+                        данных.</p>
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe src="https://vk.com/video_ext.php?oid=-15086840&id=456239572&hd=2&autoplay=1"
+                                width="853"
+                                height="480"
+                                allow="autoplay; encrypted-media; fullscreen; picture-in-picture; screen-wake-lock;"
+                                allowfullscreen></iframe>
+                        <!--                        <iframe width="720" height="405"-->
+                        <!--                                src="https://rutube.ru/play/embed/5f1ebdfbb25dc673c16c4ee2a4e7a692/" frameBorder="0"-->
+                        <!--                                allow="clipboard-write" webkitAllowFullScreen mozallowfullscreen-->
+                        <!--                                allowFullScreen></iframe>-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+<footer style="position: relative;   justify-content: center; ">
+    <div class="footer-info">
+        <p>© Петрова Ксения Олеговна, 2024</p>
+    </div>
+    <div class="icons">
+        <img class="icon" src="src/whatsapp.png" alt="whatsapp-icon" style="height: 30px;">
+        <img class="icon" src="src/vk.png" alt="vk-icon" style="height: 30px; width: 30px;">
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+            crossorigin="anonymous"></script>
+</footer>
+</body>
+</html>
